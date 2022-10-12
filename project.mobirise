@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "app-grizzly",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/grizzly.jpg",
+    "mbrsiteDomain": "uscn4dysxl",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Grizzly | Home | Grizzly.fi",
+        "meta_descr": "Grizzly.fi aims to be the Landing Page of Liquidity Mining. An Aggregator where Liquidity Mining is made easier and more profitable than ever before.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/grizzly.png\" alt=\"Grizzly\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-0",
+          "_isUserblock": true,
+          "_cid": "tk3fOw0i8w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Grizzly.fi Introduction</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">“Make DeFi accessible for everyone.” – our motto at Grizzly.fi. In this article, we will introduce what we have been working on for the last months and why it makes your life in the DeFi space easier.\n<br>\n<br>Grizzly.fi aims to be the Landing Page of Liquidity Mining. An Aggregator where Liquidity Mining is made easier and more profitable than ever before. Not only does Grizzly.fi disrupt the DeFi space with innovative features but also puts its claws into the traditional finance market by offering fiat investment gateways. Grizzly.fi is yet to be released and will launch on Polygon and the Binance Smart chain\n<br>\n<br>In this article we will talk about the:\n<br>\n<br>Origin of the Project\n<br>Features of the DeFi Platform\n<br>Traditional Finance Gateway\n<br>The Future of Grizzly\n<br>Origin of the Project\n<br>Grizzly.fi is a Swiss Start founded in 2021 by a group of DeFi enthusiasts. An experienced team with backgrounds in marketing, design, business development and IT. The idea came in early 2021 when we started using Liquidity Mining for ourselves – we saw it as a way to still make gains in a bear-market (therefore the name Grizzly). We loved Liquidity Mining instantly but discovered major opportunities for improvement; Above all, the onboarding process was complicated and interested people were scared to invest without the help of an experienced user. So we decided to build a self-explanatory but still highly profitable platform that resolves the current issues and makes Liquidity Mining accessible for more people.\n<br>\n<br>Considering the mentioned results of our deep market research and our own background experience, step by step, the Grizzly came to life. From that point we committed ourselves to go one step further and become “the Apple of Liquidity Mining” by creating the most user-friendly interface and help millions of people around the world to profit from the possibilities of DeFi. At the moment we feel like back in the early days of the internet – when you had to mess around with your modem to access the internet. Now it is our mission to make DeFi accessible for everyone\n<br>\n<br>We believe in the simple, not the comple\n<br>We believe that people care about are new and superior products that are easy to use and improve the lives of everyday users by making them money and saving them time\n<br>We believe that the benefits of DeFi should be made so simple that people of every age category can use it.\n<br>We believe that we need to create traditional (not crypto) ways to get into DeFi.\n<br>We believe in being really innovative in a few fields rather than being a bit innovative in a lot of fields.\n<br>Features of the DeFi Platform\n<br>One Click Invest\n<br>As already mentioned, great useability is Grizzly.fi’s core value and it is our mission to make Liquidity Mining and DeFi in general as simple as possible. If you have used Liquidity Mining before, you probably know how complicated the different investment processes can be. You have to visit various subpages, trade tokens into LP tokens, stake them, and so on. With the “one click invest” Grizzly.fi introduces the most straightforward onboarding process ever, which saves our users so much time and headaches. We are thrilled to tell you more about our user interface in a later article.\n<br>\n<br>Auto Compounding\n<br>Every investor knows: the compound effect works wonders for the patient. Grizzly.fi re-invests your rewards on a daily basis for you. This not only saves our users lots of fees and makes them more money but also frees them of the hassle of manually doing it every day.\n<br>\n<br>The Hub of Liquidity Mining\n<br>Grizzly.fi acts as a hub for Liquidity Mining by listing the best pools of the best websites in one uncluttered place. Users don’t invest in Grizzly.fi, they invest through Grizzly.fi. No more need to manage dozens of different platforms – everything is put together neatly in one place.\n<br>\n<br>No Impermanent Loss\n<br>As Warren Buffet once said: “Rule #1: never lose money.” This is why Grizzly.fi has its focus on stable-coin pairs where users don’t face the risk of impermanent loss.\n<br>\n<br>The following features will be included in a later version of grizzly.fi:\n<br>\n<br>Collateralized Liquidity Mining\n<br>“Why should I liquidity-mine and make 30% when I expect bitcoin to double its price in the next year?” With “collateralized liquidity mining” Grizzly.fi offers the opportunity to keep your cryptos while making a steady income with stable coin liquidity mining. So in other words, people deposit their cryptos into our Lending Platform and do Liquidity Mining with the borrowed capital while profiting on the value increase of their coins.\n<br>\n<br>Grizzly Oracle\n<br>The profitability/yields of each pool change every day. It can be a time-consuming process to figure out the best ones and reallocate your money regularly. With “Grizzly Oracle” we introduce a sophisticated algorithm that does various calculations to pick the best strategy possible. This saves our users time, headaches and earns them more money.\n<br>\n<br>Traditional Finance Gateway\n<br>After discussing the concept behind Liquidity Mining, we were overrun with requests to help them accessing the possibilities of Liquidity Mining. Many “traditional investors” don’t want to deal with the complexity of Metamask, different Blockchains or are even overwhelmed in making a Binance account and buying some cryptos. We saw a huge opportunity.\n<br>\n<br>Managing someone else’s money is a lot more difficult and regulated than building a decentralized application. Luckily we are from Switzerland – the land of chocolate and more importantly, banks! We are currently collaborating with the most modern and innovative financial institutions in Switzerland to create a solution for our traditional investors. Investing into Liquidity Mining will soon be as easy as investing in a stock or a bond.\n<br>\n<br>The Fiat funds of traditional Investors will directly go to the Grizzly Protocol and will from thereon be invested into Liquidity Mining like all other users. This will increase the TVL and benefit the community in the long run; All HONEY tokens generated by traditional investors will automatically be burnt, leaving the traditional investors only with stablecoins as profit. This will lead to fewer HONEY tokens in circulation and a more stable rise in price. We are estimating a launch of the Traditional Finance Gateway in the beginning of 2022.\n<br>\n<br>The Future of Grizzly\n<br>Grizzly.fi will launch in Q4 of 2021 on the Binance Smart Chain and shortly after on the Polygon Chain as well.\n<br>\n<br>The Story of the Grizzly does not end when all the features are developed and the Traditional Finance product has launched. After we make Liquidity Mining as easy and accessible as it possibly can, we thrive to do the same to the other sectors and use cases of DeFi. Because DeFi is still in its infancy, we are also expecting to see many new technologies to be invented on the way. Our mission will always be to make the most out of the technology. In a way like the company with the logo of the bitten fruit ;).\n<br>\n<br>Like every long-term oriented company we have a vision for the future:\n<br>“Empowering people around the world by creating innovative financial solutions and making them accessible for everyone.”\n<br>\n<br>Our Objectives (OKRs) are the following:\n<br>\n<br>Have the most user friendly and innovative DeFi platform.\n<br>Launch a fully licenced DeFi investment Fund.\n<br>(The Traditional Finance Gateway we talked about.)\n<br>Make investing in our products as easy as buying something online.\n<br>(No Metamask, no KYC, et cetera)\n<br>Create a Collateralized Liquidity Mining solution.\n<br>(Liquidity Mining with borrowed capital while profiting on price increase of your cryptos)\n<br>If you want to get to know about the upcoming features, our mobile applications or other ideas, we will keep you updated on the Socials.\n<br>\n<br>What would you like to improve or add? Join our discussion on reddit. If you are already excited for the launch, make sure to follow our socials below:</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header2-1",
+          "_isUserblock": true,
+          "_cid": "tk3fP4BuUl",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
